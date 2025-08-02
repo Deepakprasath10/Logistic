@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+  <h2>Loan Approval Prediction</h2>
+  <form action="/predict" method="post">
+
+    <label for="gender">Gender:</label>
+    <select name="gender" required>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select><br>
+
+    <label for="married">Married:</label>
+    <select name="married" required>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select><br>
+
+    <input type="number" name="income" placeholder="Applicant Income" required><br>
+
+    <input type="number" name="loan" placeholder="Loan Amount" required><br>
+
+    <label for="history">Credit History:</label>
+    <select name="history" required>
+      <option value="Good">Good</option>
+      <option value="Bad">Bad</option>
+    </select><br>
+
+    <button type="submit">Predict</button>
+  </form>
+</div>
+</body>
+</html>
